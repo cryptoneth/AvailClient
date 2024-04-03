@@ -62,17 +62,17 @@ press enter
 sudo tee /etc/systemd/system/availightd.service > /dev/null <<EOF
 
 [Unit]
-Description=Avail Light Client
-After=network.target
-StartLimitIntervalSec=0
-[Service]
-User=root
-ExecStart=ExecStart=$(which avail-light) --identity '~/avail-light/identity.toml' --network goldberg 
-Restart=always
-RestartSec=120
-[Install]
-WantedBy=multi-user.target
-EOF
+Description=Avail Light Client    
+After=network.target       
+StartLimitIntervalSec=0      
+[Service]    
+User=root    
+ExecStart=ExecStart=$(which avail-light) --identity '~/avail-light/identity.toml' --network goldberg     
+Restart=always    
+RestartSec=120    
+[Install]     
+WantedBy=multi-user.target     
+EOF    
 
 
 -------------------------
