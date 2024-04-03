@@ -51,7 +51,9 @@ nano identity.toml
 paste your key
 
 press crtl + x
+
 press y
+
 press enter
 
 -------------------------------
@@ -82,9 +84,11 @@ nano /etc/systemd/system/availightd.service
 -------------------------
 
 apt install screen
+
 screen -S client
 
 sudo systemctl daemon-reload
+
 sudo systemctl enable availightd.service
 
 
