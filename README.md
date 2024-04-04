@@ -59,10 +59,9 @@ press enter
 -------------------------------
 
 
+کل کد پایین رو یک جا گپی کنید
 
-
-sudo tee /etc/systemd/system/availightd.service > /dev/null <<EOF
-
+sudo tee /etc/systemd/system/availightd.service > /dev/null <<EOF   
 [Unit]
 Description=Avail Light Client    
 After=network.target       
